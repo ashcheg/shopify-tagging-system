@@ -22,7 +22,7 @@ Streamlit will print a local URL, usually `http://localhost:8501`.
 
 ## Use The App
 
-1. Export products from Shopify/Matrixify as CSV. XLSX is also supported when `openpyxl` is installed.
+1. Export products from Shopify/Matrixify as CSV or XLSX.
 2. Upload the export in the app.
 3. Confirm the detected columns. The file must include `Handle` and `Tags`.
 4. Enter source tags separated by commas.
