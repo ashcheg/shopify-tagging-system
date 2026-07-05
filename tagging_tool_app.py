@@ -573,7 +573,7 @@ def main() -> None:
     target_tag = st.text_input("Target tag to add", key="target_tag", placeholder="gravel bikes")
 
     if uploaded_file is None:
-        st.info("Upload a CSV export to begin. XLSX files are supported when openpyxl is installed.")
+        st.info("Upload a CSV  or XLSX file to begin.")
         return
 
     try:
