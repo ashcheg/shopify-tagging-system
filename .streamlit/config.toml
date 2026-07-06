@@ -10,8 +10,8 @@ yellowColor = "#FFBE00"
 greenColor = "#00A96E"
 redColor = "#F94F57"
 
-yellowBackgroundColor = "#FFBE00"
-blueBackgroundColor = "#00B5FF"
+yellowBackgroundColor = "#ffbf0044"
+blueBackgroundColor = "#00b7ff49"
 redBackgroundColor = "#F94F57"
 
 yellowTextColor = "#333C4D"
