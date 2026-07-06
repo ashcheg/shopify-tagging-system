@@ -1,0 +1,28 @@
+[theme]
+base = "light"
+primaryColor = "#5CB97D"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#E8E8E8"
+textColor = "#333C4D"
+font = "sans serif"
+blueColor = "#00B5FF"
+yellowColor = "#FFBE00"
+greenColor = "#00A96E"
+redColor = "#F94F57"
+
+yellowBackgroundColor = "#FFBE00"
+blueBackgroundColor = "#00B5FF"
+redBackgroundColor = "#F94F57"
+
+yellowTextColor = "#333C4D"
+blueTextColor = "#333C4D"
+redTextColor = "#FFFFFF"
+
+codeTextColor = "#F94F57"
+
+codeBackgroundColor = "#F94F57"
+
+borderColor = "#333C4D"
+
+baseFontSize = 16
+baseFontWeight = 500

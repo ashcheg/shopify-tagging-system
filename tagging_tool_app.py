@@ -667,7 +667,7 @@ def main() -> None:
         "Matched Condition Details": "Matched Condition Details",
     }
     st.subheader("Review Preview")
-    st.dataframe(review_df[list(preview_columns)].head(200), width=None)
+    st.dataframe(review_df[list(preview_columns)].head(200), width="stretch")
 
     downloads = st.columns(2)
     with downloads[0]:
