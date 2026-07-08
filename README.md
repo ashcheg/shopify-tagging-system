@@ -26,6 +26,10 @@ streamlit run tagging_tool_app.py
 
 Streamlit will print a local URL, usually `http://localhost:8501`.
 
+Streamlit shows the available tools in the sidebar. Use the main page for the
+existing Add Tags operation, or open `Set Sale Metafield` for the sale metafield
+operation.
+
 ## Use The App
 
 1. Export products from Shopify/Matrixify as CSV or XLSX.
@@ -52,6 +56,33 @@ Tags Command
 Every output row sets `Tags` to the target tag only and `Tags Command` to `MERGE`. This tells Matrixify to add the tag without replacing or removing existing product tags.
 
 Review the preview and report before importing. The output includes only products that need the new tag added.
+
+## Set Sale Metafield
+
+The `Set Sale Metafield` page generates a Matrixify-ready CSV that sets
+`Metafield: custom.sale [single_line_text_field]` to `sale` for products where
+at least one variant has `Variant Compare At Price` greater than `Variant Price`.
+
+Required input columns:
+
+```text
+Handle
+Variant Price
+Variant Compare At Price
+```
+
+If the uploaded export already includes
+`Metafield: custom.sale [single_line_text_field]`, products already marked
+`sale` are skipped. The output contains each matching product handle only once
+and includes exactly these columns:
+
+```text
+Handle
+Metafield: custom.sale [single_line_text_field]
+```
+
+The page also provides a review report CSV with row-level prices, current and
+new metafield values, inclusion status, and skip reasons.
 
 ## Condition Groups
 
